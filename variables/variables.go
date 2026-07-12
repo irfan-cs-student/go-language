@@ -14,4 +14,10 @@ func main() {
 
 	fmt.Println("My name is:", name)
 	fmt.Println("My age is:", age)
+
+	//changing value
+	name = "Ali"
+	age = 20
+	fmt.Println("My name is:", name)
+	fmt.Println("My age is:", age)
 }
