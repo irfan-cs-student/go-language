@@ -20,4 +20,13 @@ func main() {
 	age = 20
 	fmt.Println("My name is:", name)
 	fmt.Println("My age is:", age)
+
+	//bool
+	isStudent := true
+	fmt.Println("Ali is student:", isStudent)
+
+	//changing bool value
+	isStudent = false
+	fmt.Println("Ali is student:", isStudent)
+
 }
