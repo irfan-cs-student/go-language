@@ -21,6 +21,10 @@ func main() {
 	fmt.Println("My name is:", name)
 	fmt.Println("My age is:", age)
 
+	//float
+	grad := 9.8
+	fmt.Println("My grad:", grad)
+
 	//bool
 	isStudent := true
 	fmt.Println("Ali is student:", isStudent)
