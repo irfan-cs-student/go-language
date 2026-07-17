@@ -77,4 +77,40 @@ func main() {
 		fmt.Println()
 	}
 
+	fmt.Println(`
+	-------pattern 5:Diamond-----
+	`)
+
+	n = 8
+
+	//uper dioamond part
+	for i := 1; i <= n; i++ {
+
+		for sp := 1; sp <= n-i; sp++ {
+			fmt.Print(" ")
+
+		}
+		for s := 1; s <= 2*i-1; s++ {
+			fmt.Print("*")
+
+		}
+
+		fmt.Println()
+	}
+
+	//lower diomond part
+	for i := n - 1; i >= 1; i-- {
+
+		for sp := 1; sp <= n-i; sp++ {
+			fmt.Print(" ")
+
+		}
+		for s := 1; s <= 2*i-1; s++ {
+			fmt.Print("*")
+
+		}
+
+		fmt.Println()
+	}
+
 }
