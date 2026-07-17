@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 
 	fmt.Println(`
-	-------pattern 1-----
+	-------pattern 1: Number Triangle-----
 	`)
 
 	for i := 1; i <= 5; i++ {
@@ -18,13 +18,60 @@ func main() {
 	}
 
 	fmt.Println(`
-	-------pattern 2-----
+	-------pattern 2:Same number-----
 	`)
 
 	for i := 1; i <= 5; i++ {
 
 		for j := 1; j <= i; j++ {
+			fmt.Print(i)
+		}
+
+		fmt.Println()
+	}
+
+	fmt.Println(`
+	-------pattern 3:Same Diferent number-----
+	`)
+
+	num := 1
+	for i := 1; i <= 5; i++ {
+
+		for j := 1; j <= i; j++ {
+			fmt.Print(num, " ")
+			num++
+		}
+
+		fmt.Println()
+	}
+
+	fmt.Println(`
+	-------pattern 4:Inverted Numbers-----
+	`)
+
+	for i := 5; i >= 1; i-- {
+
+		for j := 1; j <= i; j++ {
 			fmt.Print(j)
+
+		}
+
+		fmt.Println()
+	}
+	fmt.Println(`
+	-------pattern 5:Pyramid-----
+	`)
+
+	n := 8
+	for i := 1; i <= n; i++ {
+
+		for j := 1; j <= n-i; j++ {
+			fmt.Print(" ")
+
+		}
+		for s := 1; s <= 2*i-1; s++ {
+			fmt.Print("*")
+
 		}
 
 		fmt.Println()
