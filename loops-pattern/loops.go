@@ -112,5 +112,6 @@ func main() {
 
 		fmt.Println()
 	}
+	// fmt.Println("checking value of outer i value :", i)
 
 }
