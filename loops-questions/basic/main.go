@@ -124,4 +124,40 @@ func main() {
 
 	fmt.Println()
 
+	//----------------------------------------------
+	// Question#9 :Reverse a number.
+	fmt.Println("Reverse a number.")
+
+	var user_num int
+	fmt.Print("Give num to reverse : ")
+	fmt.Scan(&user_num)
+
+	orignal := user_num
+	var l_digit int
+	var reverse = 0
+
+	if user_num == 0 {
+		fmt.Print("0")
+	} else {
+		for user_num != 0 {
+			l_digit = user_num % 10
+			reverse = reverse*10 + l_digit
+			user_num = user_num / 10
+
+		}
+	}
+	fmt.Println("Reverse number: ", reverse)
+	fmt.Print()
+
+	// Question#10 :Check whether a number is a palindrome.
+	fmt.Println("Check whether a number is a palindrome.")
+
+	if orignal == reverse {
+
+		fmt.Println(orignal, "=", reverse, "--- number is palindrom")
+	} else {
+		fmt.Println(orignal, "Not Equal To", reverse, "--- No palindrome")
+
+	}
+
 }
