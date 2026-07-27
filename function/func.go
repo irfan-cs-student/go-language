@@ -33,6 +33,25 @@ func even(n int) bool {
 
 	}
 }
+func isBigger(a, b int) {
+	if a == b {
+		fmt.Println("Both ", a, "and", b, "is equal")
+		fmt.Println(a, "=", b)
+	} else if a > b {
+		fmt.Println(a, "is bigger than", b)
+		fmt.Println(a, "=bigger")
+		fmt.Println(b, "=smaller")
+
+	} else {
+		fmt.Println(a, "is smaller  than", b)
+		fmt.Println(b, "=bigger")
+		fmt.Println(a, "=smaller")
+
+	}
+	//calling another funtion
+	//for chekin whic is even or odd
+
+}
 func main() {
 
 	//greet function
@@ -56,7 +75,11 @@ func main() {
 	isEven(num)          //no return
 	cheking := even(num) //with bool return
 	fmt.Println(num, "is even =", cheking)
-	fmt.Println(n, "is even:", num%2 == 0)
+	fmt.Println(num, "is even:", num%2 == 0)
 
 	//funtion for cheking whisch is larger
+
+	firstNum := 195
+	secondNum := 42
+	isBigger(firstNum, secondNum)
 }
