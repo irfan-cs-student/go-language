@@ -58,5 +58,5 @@ func main() {
 	fmt.Println(num, "is even =", cheking)
 	fmt.Println(n, "is even:", num%2 == 0)
 
-	//funtion for
+	//funtion for cheking whisch is larger
 }
