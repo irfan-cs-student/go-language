@@ -49,7 +49,9 @@ func isBigger(a, b int) {
 
 	}
 	//calling another funtion
-	//for chekin whic is even or odd
+	//for chekin  whic is even or odd
+	fmt.Println(a, "is even =", even(a))
+	fmt.Println(b, "is even =", even(b))
 
 }
 func main() {
