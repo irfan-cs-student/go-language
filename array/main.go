@@ -22,4 +22,11 @@ func main() {
 	fmt.Println("lenght of array", len(abc))
 	fmt.Println("addin index --", abc[0]+abc[0])
 
+	fmt.Println("---bool array-----")
+
+	boolvalue := [...]bool{true, false, true}
+	fmt.Println(boolvalue)
+	fmt.Println(boolvalue[1])
+	fmt.Println(boolvalue[1] == boolvalue[2])
+
 }
