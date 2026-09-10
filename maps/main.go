@@ -83,4 +83,14 @@ func main() {
 		fmt.Println("kasii gets:", kasii)
 	}
 
+	//maps with mising keys
+	fmt.Println("__________________handling msiing keys___________")
+	fmt.Println(d[0])
+	nader, exist := d[0]
+	if exist {
+		fmt.Print(nader)
+
+	} else {
+		fmt.Print("value not exist")
+	}
 }
