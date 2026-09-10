@@ -67,4 +67,11 @@ func main() {
 	c["ali"] = 2
 	fmt.Println(c["ali"] == c["yousaf"])
 
+	var d = map[int]string{
+
+		1: "ali", 2: "usman",
+		3: "yaqoob"}
+
+	fmt.Println(d)
+
 }
