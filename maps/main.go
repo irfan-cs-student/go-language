@@ -88,9 +88,17 @@ func main() {
 	fmt.Println(d[0])
 	nader, exist := d[0]
 	if exist {
-		fmt.Print(nader)
+		fmt.Println(nader)
 
 	} else {
-		fmt.Print("value not exist")
+		fmt.Println("value not exist")
+	}
+
+	//loops through maps
+	fmt.Println("_______looping through maps_______")
+
+	for _, value := range d {
+		fmt.Println(value)
+
 	}
 }
