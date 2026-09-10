@@ -1,0 +1,49 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var a map[string]int
+	fmt.Println(a)
+
+	//puting values in a map
+
+	// m["ali"] = 4
+
+	// causig error because a nill map cannot get values in a way
+	//we have to use make for inserting values
+
+	fmt.Println(a == nil) //because map is nill not empty
+
+	a = make(map[string]int) // intialize the map
+	fmt.Println(a == nil)    // not nill becuse its empty but not null
+
+	//now putting the values
+	a["irfan"] = 22
+	a["ali"] = 21
+
+	fmt.Println(a)
+
+	//others ways of delcaring the maps
+
+	b := map[string]int{
+		"ali":   1,
+		"usman": 2,
+	}
+	fmt.Println("___________map=b___________")
+	fmt.Println(b)
+
+	//adding more values
+	b["yaseen"] = 14
+	b["hunza"] = 12
+
+	fmt.Println("__after putting new values__")
+	fmt.Println(b)
+
+	//updating values
+	b["hunza"] = -999
+	fmt.Println("__ updating hunza values__")
+	fmt.Println(b)
+
+}
