@@ -46,4 +46,25 @@ func main() {
 	fmt.Println("__ updating hunza values__")
 	fmt.Println(b)
 
+	//accesting map with keys
+	fmt.Println("_____accesting map with keys _____")
+	fmt.Println(b["hunza"])
+
+	//3rd way of map declaraing
+
+	c := make(map[string]int)
+
+	fmt.Println("_______is nill or empty________")
+	fmt.Println(c)
+	fmt.Print("____is empty:")
+	fmt.Println(c == nil)
+
+	//putting values
+	c["yousaf"] = 2
+	fmt.Println(c)
+	fmt.Println(c["yousaf"] == 2)
+
+	c["ali"] = 2
+	fmt.Println(c["ali"] == c["yousaf"])
+
 }
