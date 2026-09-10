@@ -73,5 +73,14 @@ func main() {
 		3: "yaqoob"}
 
 	fmt.Println(d)
+	fmt.Println("____deleting the key (2)______")
+	delete(d, 2)
+	fmt.Println(d)
+
+	kasii, ok := d[1]
+
+	if ok {
+		fmt.Println("kasii gets:", kasii)
+	}
 
 }
