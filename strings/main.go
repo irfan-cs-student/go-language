@@ -55,8 +55,7 @@ func main() {
 
 	//joing strings
 	words := []string{"I", "love", "Go"}
-
-	result := strings.Join(words, "-")
+	result := strings.Join(words, " ")
 
 	fmt.Println(result)
 }
