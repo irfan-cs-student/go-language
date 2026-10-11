@@ -53,6 +53,7 @@ func main() {
 	fmt.Println(slice[2])
 	fmt.Println(slice[3])
 
+	//joing strings
 	words := []string{"I", "love", "Go"}
 
 	result := strings.Join(words, "-")
