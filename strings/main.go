@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 )
 
@@ -58,4 +59,36 @@ func main() {
 	result := strings.Join(words, " ")
 
 	fmt.Println(result)
+
+	num := 234
+	country := "567"
+
+	//chek type
+	fmt.Printf("%T\n", num)
+	fmt.Printf("%T\n", country)
+
+	// Integer to string
+	numText := strconv.Itoa(num)
+	fmt.Println("Integer to string:", numText)
+	fmt.Printf("Type: %T\n", numText)
+
+	// String back to integer
+	backToInt, err := strconv.Atoi(numText)
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
+
+	fmt.Println("String to integer:", backToInt)
+	fmt.Printf("Type: %T\n", backToInt)
+
+	// Convert country string to integer
+	countryNum, err := strconv.Atoi(country)
+	if err != nil {
+		fmt.Println("Error:", err)
+	} else {
+		fmt.Print(countryNum)
+	}
+	return
+
 }
