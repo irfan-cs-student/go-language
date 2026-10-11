@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	name := "irfan"
@@ -33,4 +36,26 @@ func main() {
 	fmt.Println(first_name + "" + second_name)
 	fmt.Println()
 
+	//capital letters
+	fmt.Println(strings.ToUpper(name))
+	fmt.Println(strings.ToLower(name))
+	fmt.Println(strings.ReplaceAll(name, "irfan", "Fann"))
+	fmt.Println(strings.Contains(name, "irfan"))
+	fmt.Println(strings.Contains(name, "Fann"))
+
+	//string split
+	sentence := "I love my country:"
+	slice := strings.Split(sentence, " ") //it's now slice
+
+	fmt.Println(slice)
+	fmt.Println(slice[0])
+	fmt.Println(slice[1])
+	fmt.Println(slice[2])
+	fmt.Println(slice[3])
+
+	words := []string{"I", "love", "Go"}
+
+	result := strings.Join(words, "-")
+
+	fmt.Println(result)
 }
