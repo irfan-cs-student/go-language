@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+func test() int {
+	defer fmt.Println("finished")
+	return 19
+}
+
 func main() {
 	//  defer executes arguments immediately
 
@@ -11,5 +16,6 @@ func main() {
 	//It gets the arguments immediately, but executes the function later
 	x = 20
 	fmt.Println(x)
+	fmt.Println(test())
 
 }
