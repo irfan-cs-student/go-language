@@ -8,12 +8,26 @@ import (
 func main() {
 
 	file, _ := os.Create("myinfo.txt")
-	defer file.Close()
 
 	fmt.Println("file created suceefully")
 
+	file.WriteString("my name is irfan")
+	file.WriteString("\ni'm muslims")
+
+	file.WriteString(`
+i live in pakistan. 
+I love creativity`)
+
 	data, _ := os.ReadFile("myinfo.txt")
 
-	file.WriteString("my name is irfan")
 	fmt.Println(string(data))
+	file.Close()
+
+	err := os.Remove("myinfo.txt")
+	if err != nil {
+		fmt.Println("error:", err)
+		return
+	}
+	fmt.Println("file deleted")
+
 }
